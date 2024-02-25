@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 
 export interface IconParams {
-    fill?: string,
     size?: number;
     height?: number;
     width?: number;
@@ -10,7 +9,6 @@ export interface IconParams {
 export const Search: FC<IconParams> = (props) => {
 
     const {
-        fill="black",
         size,
         height,
         width,
