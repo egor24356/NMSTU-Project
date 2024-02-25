@@ -1,9 +1,11 @@
 import React from 'react';
+import { SearchInput } from 'shared/ui';
 
 const MainPage = () => {
     return (
         <div>
-            MainPage
+            <p>MainPage</p>
+            <SearchInput placeholder='Поиск'/>
         </div>
     );
 };

@@ -1,0 +1,31 @@
+.SearchInput {
+    background-color: var(--bg-color);
+    outline: none;
+    border: none;
+}
+
+.primary {
+    color: var(--primary-color);
+    fill: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.secondary {
+    color: var(--secondary-color);
+    fill: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.Search {
+    border: 1px solid;
+    border-radius: 20px;
+    display: inline-flex;
+    padding-inline: 5px;
+    align-items: center;
+}
+
+.start {
+    flex-direction: row-reverse;
+}
+
+.end {
+}
