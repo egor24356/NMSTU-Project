@@ -1,8 +1,24 @@
-import React from "react";
+import React from 'react';
+import {useTheme} from "app/providers/ThemeProvider";
+import {classNames} from "shared/aliases/classNames";
+import {AppRouter} from "app/providers/router";
+import Navbar from "widgets/Navbar";
 
-import "./styles/index.scss";
 const App = () => {
-  return <div></div>;
+    const {theme,toggleTheme} = useTheme();
+
+    return (
+        <div className={classNames("app",{},[theme])}>
+            <button onClick={()=>{
+                toggleTheme()
+            }}>
+                click
+            </button>
+            <Navbar/>
+            <AppRouter>
+            </AppRouter>
+        </div>
+    );
 };
 
 export default App;
