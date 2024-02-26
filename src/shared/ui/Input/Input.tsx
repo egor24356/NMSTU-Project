@@ -1,8 +1,8 @@
-import cls from './SearchInput.module.scss';
+import cls from './Input.module.scss';
 import { classNames } from 'shared/aliases/classNames';
 import { FC, InputHTMLAttributes } from 'react';
 
-import { Search } from '../icons';
+import { Search } from '../../assets/icons';
 
 export enum SearchInputTheme {
     PRIMARY = 'primary',
@@ -19,7 +19,7 @@ interface SearchInputProps extends InputHTMLAttributes<HTMLInputElement> {
     magnifierPos?: SearchInputMagnifierPos
 }
 
-export const SearchInput: FC<SearchInputProps> = (props) => {
+export const Input: FC<SearchInputProps> = (props) => {
 
     const {
         className,
@@ -30,7 +30,7 @@ export const SearchInput: FC<SearchInputProps> = (props) => {
 
     return <div className={classNames(cls.Search, {}, [className, cls[theme], cls[magnifierPos]])}>
         <input
-            className={classNames(cls.SearchInput, {}, [className, cls[theme]])}
+            className={classNames(cls.Input, {}, [className, cls[theme]])}
             {...otherProps}
         />
         <Search />
